@@ -1,0 +1,9 @@
+services:
+  app:
+    build: ./app/
+    container_name: app
+    tty: true
+    volumes:
+      - ./../:/go/src/app/
+    ports:
+      - "80:80"
